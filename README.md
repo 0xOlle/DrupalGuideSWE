@@ -363,5 +363,6 @@ sudo find /var/www/html/drupal/ -type f -exec chmod 640 {} +;
 
 ```
 Den första raden begränsar mappar till 7 (rwx för ägaren) 5 (r-x för gruppen) och 0 för resterande.
+
 Den andra raden begränsar filer till 6 (rw- för ägaren) 4 (r-- för gruppen) och 0 för resterande.
 
