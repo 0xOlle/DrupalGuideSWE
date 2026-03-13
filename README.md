@@ -146,6 +146,7 @@ PermitRootLogin no
 ```
 
 **CIS 5.1.4 - Ensure sshd access is configured**
+
 Skapa en grupp och lägg till din användare:
 
 ```bash
@@ -296,6 +297,7 @@ Enligt vår `audit.rules` så loggar vi följande:
 
 ### 7.4 Begränsa Core Dumps / minnesutskrift
 **CIS 1.5.3 - Ensure core dumps are restricted**
+
 När ett program kraschar kan Linux skapa en fil med innehållet av arbetsminnet (en dump) vid exakt den tidpunkten. Detta kan även inkludera känslig information, så vi begränsar möjligheten att ta dessa "dumps".
 
 Öppna filen:
@@ -312,6 +314,7 @@ sudo nano /etc/sysctl.d/99-sysctl.conf
 
 ### 7.5 Aktivera TCP SYN cookies
 **CIS 3.3.10 - Ensure tcp syn cookies is enabled** 
+
 En stor risk för just webbservrar är överbelastningsattacker (DoS/DDoS). En variant av detta är en så kallad "SYN-flood", där angripare skickar mängder med TCP SYN-paket för att överbelasta servern med oavslutade handskakningar. Genom att aktivera TCP SYN cookies motverkar man att servern reserverar minne för falska anslutningar.
 
 Det gör vi genom att öppna:
@@ -322,6 +325,7 @@ Där lägger vi till raden `net.ipv4.tcp_syncookies = 1`
 
 ### 7.6 Inaktivera oanvända filsystem
 **CIS 1.1.1.x - Ensure unused filesystems kernel modules are not available**
+
 Föråldrade (legacy) filsystem som inte används av servern är en onödig attackyta. Vi kan "lura" systemet att peka dessa filsystem mot /bin/true, som alltid returnerar ett "lyckades"-svar; `0`.
 
 Vi skapar filen:
