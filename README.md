@@ -9,6 +9,8 @@ Som alla nya miljöer börjar vi med att uppdatera paketlistan och uppgradera ti
 sudo apt update && sudo apt upgrade -y
 
 ```
+<img width="1115" height="628" alt="apt update och upgrade" src="https://github.com/user-attachments/assets/1af829e0-e57a-4511-becc-24eb4285c766" />
+
 
 ## 2. Nätverk och Brandvägg (UFW)
 
@@ -126,6 +128,7 @@ sudo systemctl restart apache2
 
 ```
 **Det är nu möjligt att slutföra konfigurationen för Drupal genom en webbläsare.**
+<img width="1517" height="997" alt="drupal setup" src="https://github.com/user-attachments/assets/196a642c-759d-45c7-b11a-804a26d98612" />
 
 
 ## 7. Härdning av systemet & minska attackyta
@@ -211,6 +214,8 @@ Vi kan enkelt kontrollera om förändringen har skett med:
 mount | grep "/tmp"
 
 ```
+<img width="944" height="418" alt="image" src="https://github.com/user-attachments/assets/f7fb0b5c-0640-44e2-b98e-b229b001a5bf" />
+
 
 ### 7.3 Aktivera Audit Log
 
