@@ -65,7 +65,7 @@ CREATE DATABASE drupal;
 
 ```
 
-Vi skapar en användare med följande kommando (ett starkt lösenord genereras med fördel genom pwgen):
+Vi skapar en användare med följande kommando (ett starkt lösenord genereras med fördel genom `pwgen`):
 
 ```sql
 CREATE USER 'drupaladmin'@'localhost' IDENTIFIED BY '[lösenord här]';
